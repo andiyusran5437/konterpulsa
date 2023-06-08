@@ -1,0 +1,31 @@
+.featured {
+    border-radius: 5px;
+
+    .icon-box {
+        border-radius: 8px;
+        min-width: 60px;
+        min-height: 60px;
+        position: relative;
+        background-color: var(--color);
+    }
+
+    .icon-box::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        mask: var(--icon) no-repeat center;
+        background-color: white;
+    }
+
+    .featured-name {
+        opacity: .6;
+        font-family: "Roboto";
+    }
+
+    .featured-value {
+        margin-top: 5px;
+    }
+}

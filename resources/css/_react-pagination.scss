@@ -1,0 +1,45 @@
+.react-paginate {
+    display: inline-flex;
+    @apply -space-x-px;
+
+    a {
+        padding-left: 1rem;
+        border: 1px solid;
+        background-color: white;
+        @apply border-gray-200;
+        @apply text-gray-500;
+        @apply py-2;
+        @apply px-3;
+        @apply text-center;
+        font-family: 'Roboto';
+
+        &:hover {
+            @apply bg-gray-100;
+        }
+    }
+
+    li.active {
+        a {
+            @apply bg-blue-50;
+            @apply text-blue-600;
+            @apply font-medium;
+
+            &:hover {
+                @apply bg-blue-100;
+                @apply text-blue-700;
+            }
+        }
+    }
+
+    & :first-child {
+        a {
+            @apply rounded-l-md;
+        }
+    }
+
+    & :last-child {
+        a {
+            @apply rounded-r-md;
+        }
+    }
+}

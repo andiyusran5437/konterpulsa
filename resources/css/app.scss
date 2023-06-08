@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'dashboard';
+@import 'sidebar';
+@import 'sidebar-navigation';
+@import 'header';
+@import 'table';
+@import 'modal';
+@import 'react-pagination';
+@import 'featured';
+@import 'font';
+
+.content {
+    padding-left: calc(5px + 1rem);
+    padding-right: calc(5px + 1rem);
+    transition: all 300ms ease;
+    background-color: #f4f6f9;
+    min-height: 100vh;
+}
+
+* {
+    font-family: roboto;
+}

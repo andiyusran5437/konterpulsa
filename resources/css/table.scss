@@ -1,0 +1,64 @@
+.table {
+    thead {
+        tr > th {
+            border-bottom: 2px solid;
+            @apply border-slate-200;
+            font-family: 'Roboto';
+            @apply bg-gray-50;
+            @apply text-gray-600;
+            font-size: 16.5px;
+        }
+    }
+
+    tbody {
+        tr > td {
+            font-family: 'Roboto';
+            @apply text-gray-500;
+            font-size: 16px;
+            font-weight: 500;
+            @apply align-middle;
+        }
+
+        tr:nth-child(even) {
+            @apply bg-gray-100;
+
+            &:hover {
+                > td {
+                    @apply cursor-default;
+                }
+            }
+        }
+
+        tr:nth-child(odd) {
+            background-color: #fff;
+
+            &:hover {
+                > td {
+                    @apply bg-gray-100;
+                    @apply cursor-default;
+                }
+            }
+        }
+
+        tr:last-child {
+            > td {
+                border-bottom: 0;
+            }
+        }
+    }
+}
+
+.table-nohover {
+    tbody {
+        tr:nth-child(odd) {
+            background-color: #fff;
+
+            &:hover {
+                > td {
+                    @apply bg-white;
+                    @apply cursor-default;
+                }
+            }
+        }
+    }
+}

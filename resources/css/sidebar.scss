@@ -1,0 +1,40 @@
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 250px;
+    box-shadow: 0px 14px 28px rgba(0, 0, 0, 0.22);
+    transform: translateX(-250px);
+    opacity: 0;
+    transition: all 300ms ease;
+    z-index: 1050;
+}
+
+.sidebar-shown .sidebar {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.brand-container {
+    height: 72px;
+}
+
+.brand-container .brand-text {
+    font-size: 25px;
+    font-weight: 700;
+    font-family: "Lobster Two";
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/* overlay */
+.sidebar-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+}
+
+@media (min-width: 1024px) {
+    .sidebar-overlay {
+        display: none;
+    }
+}
